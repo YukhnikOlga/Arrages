@@ -23,19 +23,19 @@ public class StatsService {
     }
 
     public int totalSales(long[] sales) {
-        int totalSales = 0;
+        long totalSales = 0;
         for (int i = 0; i < sales.length; i++) {
             totalSales += sales[i];
         }
-        return totalSales;
+        return (int) totalSales;
     }
 
     public int averageSales(long[] sales) {
-        int averageSales = 0;
+        long averageSales = 0;
         for (int i = 0; i < sales.length; i++) {
             averageSales += sales[i];
         }
-        return averageSales / 12;
+        return (int) averageSales / 12;
     }
 
     public int belowAverageSales(long[] sales) {
