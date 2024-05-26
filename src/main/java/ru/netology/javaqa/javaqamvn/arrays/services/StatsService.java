@@ -27,7 +27,7 @@ public class StatsService {
         for (int i = 0; i < sales.length; i++) {
             totalSales += sales[i];
         }
-        return totalSales;
+        return (long) totalSales;
     }
 
     public int averageSales(long[] sales) {
