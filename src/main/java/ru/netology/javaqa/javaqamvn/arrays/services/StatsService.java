@@ -22,12 +22,12 @@ public class StatsService {
         return maxMonth + 1;
     }
 
-    public int totalSales(long[] sales) {
-        int totalSales = 0;
+    public long totalSales(long[] sales) {
+        long totalSales = 0;
         for (int i = 0; i < sales.length; i++) {
             totalSales += sales[i];
         }
-        return (int) totalSales;
+        return totalSales;
     }
 
     public int averageSales(long[] sales) {
