@@ -28,8 +28,8 @@ public class StatsServiceTest {
     @Test
     public void shouldTotalSales() {
         StatsService service = new StatsService();
-        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expectedTotalSales = 180;
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 20000000000};
+        int expectedTotalSales = 2000000162;
         int actualTotalSales = service.totalSales(sales);
 
         Assertions.assertEquals(expectedTotalSales, actualTotalSales);

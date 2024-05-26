@@ -23,7 +23,7 @@ public class StatsService {
     }
 
     public int totalSales(long[] sales) {
-        long totalSales = 0;
+        int totalSales = 0;
         for (int i = 0; i < sales.length; i++) {
             totalSales += sales[i];
         }
