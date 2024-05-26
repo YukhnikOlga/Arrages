@@ -28,7 +28,7 @@ public class StatsServiceTest {
     @Test
     public void shouldTotalSales() {
         StatsService service = new StatsService();
-        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 20000000000};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 30000000000, 20000000000};
         int expectedTotalSales = 2000000162;
         int actualTotalSales = service.totalSales(sales);
 
